@@ -8,5 +8,9 @@ export default function fibonacci(n) {
     return 1;
   }
 
-  return fibonacci(n - 1) + fibonacci(n - 2);
+  const fib1 = fibonacci(n - 1);
+  const fib2 = fibonacci(n - 2);
+
+
+  return (fib1 + fib2);
 }
