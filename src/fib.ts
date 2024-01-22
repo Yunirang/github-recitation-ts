@@ -1,5 +1,5 @@
 // util function that computes the fibonacci numbers
-export default function fibonacci(n) {
+export default function fibonacci(n: number): number {
   if (n < 0) {
     return -1;
   } else if (n == 0) {
@@ -8,9 +8,5 @@ export default function fibonacci(n) {
     return 1;
   }
 
-  const fib1 = fibonacci(n - 1);
-  const fib2 = fibonacci(n - 2);
-
-
-  return (fib1 + fib2);
+  return (fibonacci(n - 1) + fibonacci(n - 2));
 }
